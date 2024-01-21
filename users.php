@@ -1,7 +1,9 @@
 <!-- deal with database connection -->
-<?php include('db.php');?>
+
 
 <?php
+include_once('db.php');
+
 
 
 class Users extends Db {
