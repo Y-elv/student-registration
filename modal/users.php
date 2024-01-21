@@ -31,5 +31,11 @@ class Users extends Db {
         $data = $this->connect()->prepare($sql);
         $data->execute([$first_name, $last_name, $age, $id]);
     }
+
+    protected function deleteUser($id) {
+        $sql = "DELETE FROM students WHERE id = ?";
+        $data = $this->connect()->prepare($sql);
+        $data->execute([$id]);
+    }
     
 }
