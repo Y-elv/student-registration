@@ -1,5 +1,5 @@
 <!-- update info inside database -->
-<?php include('users.php');?>
+<?php include('./modal/users.php');?>
 <?php
 
 class UsersContr extends Users{
@@ -12,4 +12,8 @@ class UsersContr extends Users{
         $users->updateUser($userId, $first_name, $last_name, $age);
     }
     
+    public function deleteUser($userId) {
+        $users = new Users();
+        $users->deleteUser($userId);
+    }
 }

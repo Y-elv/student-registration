@@ -1,4 +1,4 @@
-<?php include('usersview.php');?>
+<?php include('./view/usersview.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +39,8 @@
                     echo "<td>" . $user['last_name'] . "</td>";
                     echo "<td>" . $user['age'] . "</td>";
                     echo "<td><a href='update_user_form.php?id=" . $user['id'] . "' class='btn btn-success'>Update</a> </td>";
-                    echo "<td><a href='delete_page1.php?id=" . $user['id'] . "' class='btn btn-danger'>Delete</a></td>";
+                    echo "<td><a href='delete_user.php?id=" . $user['id'] . "' class='btn btn-danger'>Delete</a></td>";
+
                     echo "</tr>";
                 }
                 

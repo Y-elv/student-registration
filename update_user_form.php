@@ -1,6 +1,6 @@
 <?php
-include('userscontr.php');
-include('usersview.php');
+include('./controller/userscontr.php');
+include('./view/usersview.php');
 // update_user_form.php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_user'])) {
     // Form is submitted, process the update
