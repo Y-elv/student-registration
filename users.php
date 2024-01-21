@@ -23,5 +23,11 @@ class Users extends Db {
 
        
     }
+
+    protected function updateUser($id, $first_name, $last_name, $age){
+        $sql = "UPDATE students SET first_name = ?, last_name = ?, age = ? WHERE id = ?";
+        $data = $this->connect()->prepare($sql);
+        $data->execute([$first_name, $last_name, $age, $id]);
+    }
     
 }
