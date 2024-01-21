@@ -40,8 +40,7 @@
                     echo "<td><a href='delete_page1.php?id=" . $user['id'] . "' class='btn btn-danger'>Delete</a></td>";
                     echo "</tr>";
                 }
-                error_reporting(E_ALL);
-                ini_set('display_errors', 1);
+                
                 ?>
 
     </tbody>

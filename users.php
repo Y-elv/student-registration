@@ -7,8 +7,9 @@
 class Users extends Db {
 
     protected function getAllUser(){
-        $sql = "SELECT * FROM students ";
+        $sql = "SELECT * FROM students";
         $data = $this->connect()->prepare($sql);
+        $data->execute();
         $results = $data->fetchAll();
         return $results ;
     }
