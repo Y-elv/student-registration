@@ -9,6 +9,8 @@ class UsersView extends Users {
         $results = $this->getAllUser();
 
         return $results;
+
+     
        
     }
 
